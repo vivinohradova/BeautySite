@@ -85,7 +85,8 @@
         font-size: 2.5rem; }
 
   .gradient {
-    padding: 15px; }
+    padding: 15px;
+    height: 100vh; }
     .gradient .header .container1 .navbar-toggler {
       background: pink; }
     .gradient .price .container1 {
