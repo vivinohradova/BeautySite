@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+* {
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+  color: rgba(0, 0, 0, 0.836);
+  border: none; }
+
+a {
+  color: pink;
+  text-decoration: none; }
+
+.container1 {
+  width: 1200px;
+  margin: 0 auto; }
+
+.header {
+  background: no-repeat url(./../image/pink.png); }
+  .header .container1 {
+    position: relative;
+    height: 100vh; }
+    .header .container1 .navbar-brand {
+      position: absolute;
+      top: 300%;
+      left: 20%;
+      transition: 0.6s; }
+      .header .container1 .navbar-brand:hover {
+        color: #f19ec8; }
+      .header .container1 .navbar-brand:active {
+        color: #eb6a7f; }
+      .header .container1 .navbar-brand .title,
+      .header .container1 .navbar-brand .text {
+        text-align: center; }
+      .header .container1 .navbar-brand .title {
+        font-size: 3rem; }
+    .header .container1 .navbar-collapse {
+      justify-content: flex-end; }
+      .header .container1 .navbar-collapse .navbar-nav {
+        align-items: center; }
+        .header .container1 .navbar-collapse .navbar-nav .nav-item {
+          margin-right: 50px;
+          width: 160px; }
+          .header .container1 .navbar-collapse .navbar-nav .nav-item .nav-link {
+            color: rgba(0, 0, 0, 0.836);
+            border-radius: 96% 0%;
+            box-shadow: inset 1px 1px 20px pink;
+            text-align: center;
+            font-weight: 700; }
+            .header .container1 .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+              box-shadow: 1px 1px 20px #f19ec8; }
+            .header .container1 .navbar-collapse .navbar-nav .nav-item .nav-link:active {
+              box-shadow: 1px 1px 20px #eb6a7f; }
+          .header .container1 .navbar-collapse .navbar-nav .nav-item .selected {
+            box-shadow: inset 1px 1px 20px #c968c9; }
+        .header .container1 .navbar-collapse .navbar-nav .dropdown-menu {
+          box-shadow: 1px 1px 20px #c968c9;
+          background: pink; }
+          .header .container1 .navbar-collapse .navbar-nav .dropdown-menu .dropdown-item:hover {
+            background: #f19ec8; }
+
+.gradient {
+  background: radial-gradient(circle at 10% 20%, black 0%, #404040 90.2%);
+  height: 100vh; }
+  .gradient .header.header_about {
+    background: transparent; }
+    .gradient .header.header_about .container1 {
+      height: auto; }
+      .gradient .header.header_about .container1 .navbar-collapse .navbar-nav .nav-item .nav-link {
+        color: pink; }
+  .gradient .promo .container1 .content {
+    display: flex;
+    align-items: center;
+    padding-top: 60px; }
+    .gradient .promo .container1 .content .text {
+      color: pink;
+      font-size: 1.5rem;
+      width: 50%;
+      padding-left: 80px; }
+    .gradient .promo .container1 .content .image {
+      width: 20%;
+      box-shadow: 1px 1px 20px pink; }
+  .gradient .promo .container1 .contacts .instagram,
+  .gradient .promo .container1 .contacts .telegram,
+  .gradient .promo .container1 .contacts .telephon {
+    font-size: 1rem;
+    background-color: #18191f;
+    color: #c968c9;
+    box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080, 2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080;
+    border-radius: 29px;
+    padding: 11px 19px;
+    margin: 30px 10px;
+    animation: animate 3s linear infinite;
+    text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff; }
+    .gradient .promo .container1 .contacts .instagram:hover,
+    .gradient .promo .container1 .contacts .telegram:hover,
+    .gradient .promo .container1 .contacts .telephon:hover {
+      transform: scale(1.1); }
+  .gradient .promo .container1 .contacts .instagram {
+    animation-delay: 0.3s; }
+  .gradient .promo .container1 .contacts .telegram {
+    animation-delay: 0.7s; }
+  .gradient .promo .container1 .contacts .telephon {
+    animation-delay: 0.1s; }
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg); }
+  to {
+    filter: hue-rotate(360deg); } }
+  .gradient .promo .container1 .image {
+    display: flex;
+    justify-content: flex-end; }
+    .gradient .promo .container1 .image img {
+      width: 22%;
+      box-shadow: 1px 1px 20px pink; }
+
+.gradient-price {
+  height: auto; }
+  .gradient-price .price .container1 .title {
+    color: pink;
+    text-align: center; }
+  .gradient-price .price .container1 .card-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .gradient-price .price .container1 .card-wrap .btn {
+      box-shadow: 1px 1px 20px #c968c9;
+      border: none; }
+      .gradient-price .price .container1 .card-wrap .btn:hover {
+        cursor: default; }
+
+.gradient .contacts .container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .gradient .contacts .container1 .insta,
+  .gradient .contacts .container1 .telegram {
+    width: 200px;
+    margin: 30px 0; }
+    .gradient .contacts .container1 .insta:hover,
+    .gradient .contacts .container1 .telegram:hover {
+      box-shadow: 1px 1px 20px #c968c9;
+      border-radius: 20%; }
+  .gradient .contacts .container1 .tel {
+    font-size: 2rem; }
+    .gradient .contacts .container1 .tel:hover {
+      box-shadow: 1px 1px 20px #c968c9;
+      border-radius: 5%; }
+
+/*# sourceMappingURL=style.css.map */

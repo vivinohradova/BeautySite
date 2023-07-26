@@ -1,0 +1,251 @@
+@import "./Lib/colors.scss";
+
+
+//Mobile
+@media screen and (max-width: 520px) {
+
+    // Promo
+    .header {
+        background: right 35% bottom 100% url(./../image/pink.png);
+
+        .container1 {
+            padding: 20px;
+            width: 100%;
+
+            .container-fluid {
+                justify-content: flex-end;
+            }
+
+            .navbar-brand {
+                .title {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+
+    // Price
+
+    .gradient {
+        padding: 15px;
+
+        .header {
+            .container1 {
+                .navbar-toggler {
+                    background: $pink;
+                }
+            }
+        }
+
+        .price {
+            .container1 {
+
+                width: 100%;
+
+                .card-wrap {
+                    flex-direction: column;
+                    align-items: center;
+
+                    .card {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    // About_me
+
+    .gradient {
+height: auto;
+        .promo {
+            .container1 {
+
+                width: 100%;
+
+                .content {
+                    flex-direction: column;
+                    padding-top: 30px;
+
+                    .image {
+                        width: 70%;
+                    }
+
+                    .text {
+                        width: 70%;
+                        padding-left: 0;
+                    }
+                }
+
+                .image {
+                    img {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Tablet SD*/
+@media screen and (min-width: 521px) and (max-width: 768px) {
+
+    // Promo
+    .header {
+        background: right 35% bottom 100% url(./../image/pink.png);
+
+        .container1 {
+            padding: 30px;
+            width: 100%;
+
+            .container-fluid {
+                justify-content: flex-end;
+            }
+
+            .navbar-brand {
+
+                .title {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+    // Price
+
+    .gradient {
+        padding: 15px;
+
+        .header {
+            .container1 {
+                .navbar-toggler {
+                    background: $pink;
+                }
+            }
+        }
+
+        .price {
+            .container1 {
+
+                width: 100%;
+
+                .card-wrap {
+                    justify-content: space-around;
+
+                    .card {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    // About_me
+
+    .gradient {
+        height: auto;
+        .promo {
+            .container1 {
+
+                width: 100%;
+
+                .content {
+                    flex-direction: column;
+                    padding-top: 30px;
+
+                    .image {
+                        width: 70%;
+                    }
+
+                    .text {
+                        width: 70%;
+                        padding-left: 0;
+                    }
+                }
+
+                .image {
+                    img {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Tablet HD*/
+@media screen and (min-width: 769px) and (max-width: 1380px) {
+
+    // Promo
+    .header {
+        background: right 35% bottom 100% url(./../image/pink.png);
+
+        .container1 {
+            padding: 40px;
+            width: 100%;
+
+            .container-fluid {
+                justify-content: flex-end;
+            }
+
+            .navbar-brand {
+                .title {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+
+    // Price
+
+    .gradient {
+        padding: 15px;
+
+        .header {
+            .container1 {
+                .navbar-toggler {
+                    background: $pink;
+                }
+            }
+        }
+
+        .price {
+            .container1 {
+
+                width: 100%;
+
+                .card-wrap {
+                    justify-content: space-around;
+
+                    .card {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+     // About_me
+
+     .gradient {
+        
+        .promo {
+            .container1 {
+
+                width: 100%;
+
+                .content {
+                    .image {
+                        width: 30%;
+                    }
+                }
+
+                  .image {
+                    img {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

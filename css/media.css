@@ -1,0 +1,105 @@
+@media screen and (max-width: 520px) {
+  .header {
+    background: right 35% bottom 100% url(./../image/pink.png); }
+    .header .container1 {
+      padding: 20px;
+      width: 100%; }
+      .header .container1 .container-fluid {
+        justify-content: flex-end; }
+      .header .container1 .navbar-brand .title {
+        font-size: 1.6rem; }
+
+  .gradient {
+    padding: 15px; }
+    .gradient .header .container1 .navbar-toggler {
+      background: pink; }
+    .gradient .price .container1 {
+      width: 100%; }
+      .gradient .price .container1 .card-wrap {
+        flex-direction: column;
+        align-items: center; }
+        .gradient .price .container1 .card-wrap .card {
+          margin-bottom: 15px; }
+
+  .gradient {
+    height: auto; }
+    .gradient .promo .container1 {
+      width: 100%; }
+      .gradient .promo .container1 .content {
+        flex-direction: column;
+        padding-top: 30px; }
+        .gradient .promo .container1 .content .image {
+          width: 70%; }
+        .gradient .promo .container1 .content .text {
+          width: 70%;
+          padding-left: 0; }
+      .gradient .promo .container1 .image img {
+        display: none; } }
+/* Tablet SD*/
+@media screen and (min-width: 521px) and (max-width: 768px) {
+  .header {
+    background: right 35% bottom 100% url(./../image/pink.png); }
+    .header .container1 {
+      padding: 30px;
+      width: 100%; }
+      .header .container1 .container-fluid {
+        justify-content: flex-end; }
+      .header .container1 .navbar-brand .title {
+        font-size: 2rem; }
+
+  .gradient {
+    padding: 15px; }
+    .gradient .header .container1 .navbar-toggler {
+      background: pink; }
+    .gradient .price .container1 {
+      width: 100%; }
+      .gradient .price .container1 .card-wrap {
+        justify-content: space-around; }
+        .gradient .price .container1 .card-wrap .card {
+          margin-bottom: 15px; }
+
+  .gradient {
+    height: auto; }
+    .gradient .promo .container1 {
+      width: 100%; }
+      .gradient .promo .container1 .content {
+        flex-direction: column;
+        padding-top: 30px; }
+        .gradient .promo .container1 .content .image {
+          width: 70%; }
+        .gradient .promo .container1 .content .text {
+          width: 70%;
+          padding-left: 0; }
+      .gradient .promo .container1 .image img {
+        display: none; } }
+/* Tablet HD*/
+@media screen and (min-width: 769px) and (max-width: 1380px) {
+  .header {
+    background: right 35% bottom 100% url(./../image/pink.png); }
+    .header .container1 {
+      padding: 40px;
+      width: 100%; }
+      .header .container1 .container-fluid {
+        justify-content: flex-end; }
+      .header .container1 .navbar-brand .title {
+        font-size: 2.5rem; }
+
+  .gradient {
+    padding: 15px; }
+    .gradient .header .container1 .navbar-toggler {
+      background: pink; }
+    .gradient .price .container1 {
+      width: 100%; }
+      .gradient .price .container1 .card-wrap {
+        justify-content: space-around; }
+        .gradient .price .container1 .card-wrap .card {
+          margin-bottom: 15px; }
+
+  .gradient .promo .container1 {
+    width: 100%; }
+    .gradient .promo .container1 .content .image {
+      width: 30%; }
+    .gradient .promo .container1 .image img {
+      display: none; } }
+
+/*# sourceMappingURL=media.css.map */

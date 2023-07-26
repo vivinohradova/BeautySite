@@ -1,0 +1,273 @@
+// COMMONS
+@import './Lib/colors.scss';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    color: $black;
+    border: none;
+}
+
+a {
+    color: $pink;
+    text-decoration: none;
+}
+
+.container1 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+// PROMO
+.header {
+    background: no-repeat url(./../image/pink.png);
+
+    .container1 {
+        position: relative;
+        height: 100vh;
+
+        .navbar-brand {
+            position: absolute;
+            top: 300%;
+            left: 20%;
+            transition: 0.6s;
+
+            &:hover {
+                color: $hover;
+            }
+
+            &:active {
+                color: $active;
+            }
+
+            .title,
+            .text {
+                text-align: center;
+            }
+
+            .title {
+                font-size: 3rem;
+            }
+        }
+
+        .navbar-collapse {
+            justify-content: flex-end;
+
+            .navbar-nav {
+                align-items: center;
+
+                .nav-item {
+                    margin-right: 50px;
+                    width: 160px;
+
+                    .nav-link {
+                        color: $black;
+                        border-radius: 96% 0%;
+                        box-shadow: inset 1px 1px 20px $pink;
+                        text-align: center;
+                        font-weight: 700;
+
+                        &:hover {
+                            box-shadow: 1px 1px 20px $hover;
+                        }
+
+                        &:active {
+                            box-shadow: 1px 1px 20px $active;
+                        }
+                    }
+
+                    .selected {
+                        box-shadow: inset 1px 1px 20px $violet;
+                    }
+                }
+
+                .dropdown-menu {
+                    box-shadow: 1px 1px 20px $violet;
+                    background: $pink;
+
+                    .dropdown-item {
+                        &:hover {
+                            background: $hover;
+                        }
+
+                    }
+                }
+            }
+        }
+
+    }
+
+
+}
+
+// ABOUT ME
+.gradient {
+    background: $gradient-background;
+    height: 100vh;
+
+    .header.header_about {
+        background: transparent;
+
+        .container1 {
+
+            height: auto;
+
+            .navbar-collapse {
+                .navbar-nav {
+
+                    .nav-item {
+                        .nav-link {
+                            color: $pink;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .promo {
+
+        .container1 {
+
+
+            .content {
+                display: flex;
+                align-items: center;
+                padding-top: 60px;
+
+                .text {
+                    color: $pink;
+                    font-size: 1.5rem;
+                    width: 50%;
+                    padding-left: 80px;
+                }
+
+                .image {
+                    width: 20%;
+                    box-shadow: 1px 1px 20px $pink;
+                }
+            }
+
+            .contacts {
+
+                .instagram,
+                .telegram,
+                .telephon {
+                    font-size: 1rem;
+                    background-color: #18191f;
+                    color: $violet;
+                    box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
+                        2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
+                        inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080;
+                    border-radius: 29px;
+                    padding: 11px 19px;
+                    margin: 30px 10px;
+                    animation: animate 3s linear infinite;
+                    text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+                        0 0 200px #0072ff;
+
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                }
+
+                .instagram {
+                    animation-delay: 0.3s;
+                }
+
+                .telegram {
+                    animation-delay: 0.7s;
+                }
+
+                .telephon {
+                    animation-delay: 0.1s;
+                }
+
+                @keyframes animate {
+                    from {
+                        filter: hue-rotate(0deg);
+                    }
+                    to {
+                        filter: hue-rotate(360deg);
+                    }
+                }
+
+            }
+
+            .image {
+                display: flex;
+                justify-content: flex-end;
+
+                img {
+                    width: 22%;
+                    box-shadow: 1px 1px 20px $pink;
+                }
+            }
+        }
+    }
+}
+
+// PRICE
+.gradient-price {
+    height: auto;
+
+    .price {
+        .container1 {
+            .title {
+                color: $pink;
+                text-align: center;
+            }
+
+            .card-wrap {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .btn {
+                    box-shadow: 1px 1px 20px $violet;
+                    border: none;
+
+                    &:hover {
+                        cursor: default;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+// CONTACTS
+.gradient {
+    .contacts {
+        .container1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .insta,
+            .telegram {
+                width: 200px;
+                margin: 30px 0;
+
+                &:hover {
+                    box-shadow: 1px 1px 20px $violet;
+                    border-radius: 20%;
+                }
+            }
+
+            .tel {
+                font-size: 2rem;
+
+                &:hover {
+                    box-shadow: 1px 1px 20px $violet;
+                    border-radius: 5%;
+                }
+            }
+
+        }
+    }
+}
